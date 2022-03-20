@@ -8,8 +8,10 @@
         <property name="connection.username">root</property>
         <property name="connection.password">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
         <property name="show_sql">true</property>
+        <property name="cache.use_second_level_cache">true</property>
+        <property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
         <mapping class="com.hibernate.Student"/>
         <mapping class="com.hibernate.Address"/>
         <mapping class="com.hibernate.MappingDemo.OneToOne.Question" />

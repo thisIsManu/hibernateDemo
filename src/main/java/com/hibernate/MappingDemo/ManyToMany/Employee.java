@@ -22,4 +22,3 @@ public class Employee {
     @JoinTable(name = "emp_project", joinColumns = {@JoinColumn(name = "e_id")}, inverseJoinColumns = {@JoinColumn(name = "p_id")})
     private List<Project> projects;
 }
-+

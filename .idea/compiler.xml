@@ -10,5 +10,8 @@
         <module name="HibernateProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hibernateDemo" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

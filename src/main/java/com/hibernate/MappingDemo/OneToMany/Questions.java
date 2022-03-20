@@ -22,6 +22,6 @@ public class Questions {
     @Column(name = "question")
     private String question;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "questions")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "questions", cascade = {CascadeType.ALL, CascadeType.PERSIST})
     private List<Answers> answer;
 }

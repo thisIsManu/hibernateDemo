@@ -8,7 +8,7 @@ import lombok.ToString;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "answer")
+@Table(name = "answer_one")
 @Builder
 @Getter
 @Setter
